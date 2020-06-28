@@ -30,11 +30,11 @@ public class Dataimply implements DataServ {
 		// TODO Auto-generated method stub
 		try {
 			con = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:XE", "system", "oracle");
-			String sql = "select * from comuser where= ?";
+			String sql = "select * from comuser where id = ?";
 			ps = con.prepareStatement(sql);
 			ps.setString(1, id);
 			
-			rs=ps.executeQuery();
+			rs = ps.executeQuery();
 			
 			if(rs.next()) {
 			list.add(rs.getString("id"));
@@ -42,6 +42,8 @@ public class Dataimply implements DataServ {
 			list.add(rs.getInt("time"));
 			list.add(rs.getString("name"));
 			}
+			
+			int a = ps.executeUpdate();
 			
 				} catch (Exception e) {
 					e.printStackTrace();
