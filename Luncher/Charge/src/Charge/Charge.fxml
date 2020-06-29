@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="133.0" prefWidth="263.0" 
+style="-fx-background-color: Darkblue;" 
+xmlns="http://javafx.com/javafx/8" 
+xmlns:fx="Charge.Charge.Controller">
+   <children>
+      <Button fx:id="btn" layoutX="86.0" layoutY="90.0" mnemonicParsing="false" onAction="#WindowClose" prefHeight="30.0" prefWidth="94.0" style="-fx-background-color: gold;" text="결제">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="lbl1" layoutX="33.0" layoutY="21.0" prefHeight="24.0" prefWidth="41.0" text="이름" textFill="#fcfcfc" />
+      <Label fx:id="lbl2" layoutX="33.0" layoutY="55.0" prefHeight="24.0" prefWidth="41.0" text="요금" textFill="WHITE" />
+      <TextField fx:id="txt1" layoutX="86.0" layoutY="22.0" />
+      <TextField fx:id="txt2" layoutX="86.0" layoutY="56.0" />
+   </children>
+</Pane>
