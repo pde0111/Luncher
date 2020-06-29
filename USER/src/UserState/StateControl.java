@@ -42,16 +42,12 @@ public class StateControl extends Control implements Initializable {
 	public void order (ActionEvent e) {
 		//음식 주문
 	}
-	
-	public void addtime (ActionEvent e) {
-		//시간 충전
-	}
-	
-	public void end (ActionEvent e) {
+
+	public void end (ActionEvent e) { //종료버튼
 		com.WinClose(e);
 	}
 	
 	public void Countime (ActionEvent e) { //상태창으로 넘어오기전에 이 메소드부터 넘겨보자 콤보박스처럼
-		state.Countime(root);
+		state.Countime(root);			   // 주문 버튼에 임시등록되어있음
 	}	
 }
