@@ -35,7 +35,7 @@ public class StateControl extends Control implements Initializable {
 	}
 	//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
 	public void test (ActionEvent e) {
-		state.userinfo(root);
+		state.test(e);
 	}
 	//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
 	
@@ -48,7 +48,7 @@ public class StateControl extends Control implements Initializable {
 	}
 	
 	public void end (ActionEvent e) {
-	
+		com.WinClose(e);
 	}
 	
 	public void Countime (ActionEvent e) { //상태창으로 넘어오기전에 이 메소드부터 넘겨보자 콤보박스처럼

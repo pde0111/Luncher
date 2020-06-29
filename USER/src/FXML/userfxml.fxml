@@ -1,20 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserState.StateControl">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="500.0" style="-fx-background-color: darkslateblue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserState.StateControl">
    <children>
-      <Button fx:id="b" layoutX="487.0" layoutY="105.0" mnemonicParsing="false" onAction="#test" text="종료" />
-      <TextField fx:id="name" editable="false" layoutX="207.0" layoutY="100.0"  />
-      <TextField fx:id="time" editable="false" layoutX="207.0" layoutY="146.0" />
-      <Label layoutX="107.0" layoutY="100.0" text="이름" />
-      <Label layoutX="89.0" layoutY="152.0" text="남은시간" />
-      <TextField fx:id="com" layoutX="32.0" layoutY="25.0" prefHeight="63.0" prefWidth="93.0" />
-      <Button layoutX="66.0" layoutY="289.0" mnemonicParsing="false" onAction="#Countime" text="주문" />
-      <Button layoutX="228.0" layoutY="295.0" mnemonicParsing="false" text="시간충전" />
-      <Button fx:id="set" layoutX="427.0" layoutY="295.0" mnemonicParsing="false"  text="자리이동" />
+      <Button fx:id="b" layoutX="414.0" layoutY="42.0" mnemonicParsing="false" onAction="#end" prefHeight="166.0" prefWidth="60.0" style="-fx-background-color: gold;" text="종료" />
+      <TextField fx:id="name" editable="false" layoutX="182.0" layoutY="98.0" />
+      <TextField fx:id="time" editable="false" layoutX="182.0" layoutY="158.0" />
+      <Label layoutX="45.0" layoutY="93.0" prefHeight="54.0" prefWidth="72.0" text="이름" textFill="GOLD">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label layoutX="45.0" layoutY="163.0" text="남은시간" textFill="GOLD">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <TextField fx:id="com" editable="false" layoutX="15.0" layoutY="15.0" prefHeight="54.0" prefWidth="60.0">
+         <font>
+            <Font size="24.0" />
+         </font></TextField>
+      <Button layoutX="15.0" layoutY="240.0" mnemonicParsing="false" onAction="#Countime" prefHeight="90.0" prefWidth="120.0" style="-fx-background-color: gold;" text="주문" />
+      <Button layoutX="190.0" layoutY="240.0" mnemonicParsing="false" onAction="#test" prefHeight="90.0" prefWidth="120.0" style="-fx-background-color: gold;" text="시간충전" />
+      <Button fx:id="set" layoutX="365.0" layoutY="240.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="120.0" style="-fx-background-color: gold;" text="자리이동" />
    </children>
 </Pane>

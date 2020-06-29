@@ -61,9 +61,13 @@ public class Dataimply implements DataServ {
 			ps.setInt(1, time);
 			ps.setString(2, id);
 			
+			ps.executeUpdate();
+			
 			sql="commit";
 			ps=con.prepareStatement(sql);
-			System.out.println("종료");
+			
+			ps.executeUpdate();
+			System.out.println("업데이트완료");
 			
 			rs.close();
 			ps.close();
