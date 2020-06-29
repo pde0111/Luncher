@@ -100,7 +100,7 @@ public class MembershipController extends Controller implements Initializable{
 		member.setName(txtFldMap.get(txtFldArr[0]).getText());
 		member.setId(txtFldMap.get(txtFldArr[1]).getText());
 		member.setPw(txtFldMap.get(txtFldArr[2]).getText());
-		member.setCardNum(memSrv.getCardNum(root));
+		member.setCardNum(txtFldMap.get(txtFldArr[4]).getText());
 		
 		if(member.getCardNum().matches("\\d{16}")) {
 			System.out.println("16자 제한 성공");
