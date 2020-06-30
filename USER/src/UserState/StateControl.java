@@ -13,6 +13,7 @@ import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
+import javafx.stage.Stage;
 
 public class StateControl extends Control implements Initializable {
 
@@ -33,18 +34,15 @@ public class StateControl extends Control implements Initializable {
 		com = new comimply();
 		
 	}
-	//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
-	public void test (ActionEvent e) {
-		state.test(e);
-	}
-	//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
+
 	
 	public void order (ActionEvent e) {
 		//음식 주문
 	}
 
 	public void end (ActionEvent e) { //종료버튼
-		com.WinClose(e);
+		Stage s = new Stage();
+		com.WinShow(s, "Charge.fxml");
 	}
 	
 	public void Countime (ActionEvent e) { //상태창으로 넘어오기전에 이 메소드부터 넘겨보자 콤보박스처럼

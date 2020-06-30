@@ -9,6 +9,7 @@ import javafx.stage.Stage;
 public interface comserv {
 	public Parent WinShow (Stage stage,String Path);
 	public void WinClose (ActionEvent e);
+	public void allclose ();
 	
 	
 }

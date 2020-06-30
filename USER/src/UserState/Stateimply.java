@@ -20,12 +20,7 @@ public class Stateimply implements Stateserv {
 	int time; //임시 줄어들 시간 getter
 	int set=55;  //임시 컴퓨터 자리 getter
 	
-	//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
-	@Override
-	public void test(ActionEvent e) {
-	
-	}
-	//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
+ 
 	@Override
 	public void Countime(Parent root) {//시간 추가방법 구상
 		// TODO Auto-generated method stub

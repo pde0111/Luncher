@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -37,6 +38,12 @@ public class comimply implements comserv{
 		Parent root = (Parent)e.getSource();
 		Stage stage = (Stage)root.getScene().getWindow();
 		stage.close();
+	}
+
+	@Override
+	public void allclose() {
+		// TODO Auto-generated method stub
+		Platform.exit();
 	}
 	
 
